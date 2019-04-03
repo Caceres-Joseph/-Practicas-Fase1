@@ -1,7 +1,7 @@
 @extends('VistaAdmin/master')
 @section('content')
 <div class="container">
-<h3>Registrar empleado</h3>
+<h3>Registrar prediccion</h3>
 <div class="col-lg-9">
         <form class="row contact_form" enctype="multipart/form-data" method="post" action="{{url('Nuevo_Empleado')}}" id="contactForm" novalidate="novalidate">
             @csrf
@@ -28,7 +28,7 @@
 
             </div> 
             <div class="col-md-12 text-right">
-                <button type="submit" value="submit" class="primary-btn">Registrar empleado</button>
+                <button type="submit" value="submit" class="primary-btn">Registrar prediccion</button>
             </div>
         </form>
     </div>

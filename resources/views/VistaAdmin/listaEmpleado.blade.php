@@ -1,7 +1,7 @@
 @extends('VistaAdmin/master')
 @section('content')
 <div class="container">
-<h3>Lista de empleados</h3>
+<h3>Lista de predicciones</h3>
 <div class="col-lg-9">
 
 <table class="table">

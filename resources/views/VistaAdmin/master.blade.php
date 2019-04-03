@@ -8,7 +8,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
          
-        <title>Tienda</title>
+        <title>Clima</title>
   
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -35,7 +35,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light main_box">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="/"> <h2>El Guarda-Ropa</h2> </a>
+					<a class="navbar-brand logo_h" href="/"> <h2>El Clima</h2> </a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
@@ -47,29 +47,15 @@
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item"><a class="nav-link" href="/Admin">Inicio</a></li>
 							<li class="nav-item"><a class="nav-link" href="/login">Salir</a></li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Productos</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="/Crear_Producto">Nuevo Producto</a></li>
-									<li class="nav-item"><a class="nav-link" href="/Productos">Ver Productos</a></li>
-								</ul>
-                            </li>
-                            <li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Categorias</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="/Crear_Categoria">Nueva Categoria</a></li>
-									<li class="nav-item"><a class="nav-link" href="/Categorias">Ver Categorias</a></li>
-								</ul>
-                            </li>
+							
+							
 
                             <li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Empleados</a>
+								 aria-expanded="false">Predicciones</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="/Crear_Empleado">Nueva Empleado</a></li>
-									<li class="nav-item"><a class="nav-link" href="/Empleados">Ver Empleados</a></li>
+									<li class="nav-item"><a class="nav-link" href="/Crear_Empleado">Nueva prediccion</a></li>
+									<li class="nav-item"><a class="nav-link" href="/Empleados">Lista de predicciones</a></li>
 								</ul>
                             </li>
                             <!--
