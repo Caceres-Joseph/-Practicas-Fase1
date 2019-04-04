@@ -38,8 +38,8 @@ class DatabaseSeeder extends Seeder
 
 
         DB::table('empleados')->insert([
-            'nombre' => 'Juan',
-            'apellido' => 'Perez',
+            'nombre' => 'Lunes',
+            'apellido' => '55',
             'cui' => 'N-3243423',
             'email' => 'perez@gmail.com',
             'edad' => '12',

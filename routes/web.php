@@ -15,10 +15,15 @@
 +---------------------------
 | VISTAS
 +---------------------------
-*/ 
-Route::get('/', function () {
+*/
+
+/* Route::get('/', function () {
     return view('home');
-});
+}); */
+
+
+Route::get('/','WeatherController@index');
+
 
 Route::get('/login', function () {
     return view('LoginRegistro/login');
@@ -112,3 +117,17 @@ Route::get('Eliminar_Empleado/{id}', 'EmpleadoController@eliminar');
 
 Route::get('/Empleados','EmpleadoController@index');
  
+
+
+
+/*
+ +----------------------------
+ | Clientes
+ -----------------------------
+ */
+/* RUTA PARA REGISTAR PRODUCTOS */
+Route::post('Nuevo_Empleado/', 'EmpleadoController@RegistrarEmpleado');
+/* RUTA PARA PODER ELIMINAR UN PRODUCTO */
+Route::get('Eliminar_Empleado/{id}', 'EmpleadoController@eliminar');
+/* RUTA PARA PODER LISTAR LOS PRODUCTOS */
+//Route::get('/Empleados', 'EmpleadoController@ListarEmpleados')->name('get_empleados');

@@ -21,7 +21,7 @@ class EmpleadoController extends Controller
         $producto->save();/* 
         error_log("Se registro el empleado");
         return "registrar un empleado"; */
-        return redirect('Crear_Empleado')->with('success','Se registró correctamente el empleado');
+        return redirect('Crear_Empleado')->with('success','Se registró correctamente la prediccion');
     }
 
     // FUNCION QUE SE ENCARGA DE ELIMINAR UN PRODUCTO

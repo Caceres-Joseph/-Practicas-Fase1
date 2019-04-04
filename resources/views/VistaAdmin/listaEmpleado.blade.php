@@ -8,12 +8,12 @@
   <thead>
     <tr>
     
-      <th scope="col">Nombre</th>
-      <th scope="col">Apellido</th>
-      <th scope="col">Cui</th>
-      <th scope="col">Correo</th>
-      <th scope="col">Edad</th>
-      <th scope="col">Direccion</th>
+      <th scope="col">Dia</th>
+      <th scope="col">Alta °F</th>
+      <th scope="col">Baja °F</th>
+      <th scope="col">Texto</th> 
+      <th scope="col">Fecha</th> 
+      <th scope="col">Acción</th>
     </tr>
   </thead>
   <tbody>
@@ -24,9 +24,9 @@
             <th >{{$noticia['nombre']}}</th>
             <td >{{$noticia['apellido']}}</td>   
             <td >{{$noticia['cui']}}</td> 
-            <td >{{$noticia['email']}}</td> 
-            <td >{{$noticia['edad']}}</td> 
-            <td >{{$noticia['direccion']}}</td>  
+            <td >{{$noticia['email']}}</td>  
+            <td >{{$noticia['created_at']}}</td>  
+ 
             <td><form novalidate="novalidate" enctype="multipart/form-data" action="{{action('EmpleadoController@eliminar', $noticia['id'])}}"   method="get">
                 @csrf
                 <input name="_method" type="hidden" value="DELETE">

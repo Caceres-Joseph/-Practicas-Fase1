@@ -7,23 +7,17 @@
             @csrf
             <div class="col-md-6">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre'">
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Dia" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Dia'">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Apellido'">
+                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Baja °F" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Baja °F'">
                 </div> 
                 <div class="form-group">
-                    <input type="text" class="form-control" id="cui" name="cui" placeholder="Cui" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Cui'">
+                    <input type="text" class="form-control" id="cui" name="cui" placeholder="Alta °F" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Alta °F'">
                 </div> 
                 <div class="form-group">
-                    <input type="text" class="form-control" id="email" name="email" placeholder="Correo" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Correo'">
-                </div> 
-                <div class="form-group">
-                    <input type="text" class="form-control" id="edad" name="edad" placeholder="Edad" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Edad'">
-                </div> 
-                <div class="form-group">
-                    <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Direccion'">
-                </div> 
+                    <input type="text" class="form-control" id="email" name="email" placeholder="Texto" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Texto'">
+                </div>  
 
 
             </div> 
