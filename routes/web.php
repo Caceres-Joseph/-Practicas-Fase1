@@ -58,13 +58,7 @@ Route::post('Registrar', 'UserController@RegistrarCliente');
 +------------
 | VISTA DE ADMINISTRACION
 */ 
-Route::get('/Admin', 'LogInController@admin');
-Route::get('/Crear_Producto', function(){
-    return view('VistaAdmin/nuevoProducto');
-});
-Route::get('/Crear_Categoria', function(){
-    return view('VistaAdmin/nuevaCategoria', ['error' => false, 'correcto'=> false]);
-});
+Route::get('/Admin', 'LogInController@admin'); 
 
 Route::get('/Crear_Empleado', function(){
     return view('VistaAdmin/nuevoEmpleado');
@@ -72,36 +66,7 @@ Route::get('/Crear_Empleado', function(){
 Route::get('/Lista_Empleado', function(){
     return view('VistaAdmin/listaEmpleado');
 });
-
-Route::get('/Crear_Producto','ProductoController@getPageNewProduct');
-
-/*
- +----------------------------
- | CATEGORIAS
- -----------------------------
- */
-/* RUTA PARA REGISTRAR CATEGORIAS */
-Route::post('/Nueva_Categoria', 'CategoriaController@RegistrarCategoria')->name('nueva_categoria');
-/* RUTA PARA PODER ELIMINAR UNA CATEGORIA */
-Route::get('/Eliminar_Categoria/{id}', 'CategoriaController@EliminarCategoria')->name('eliminar_categoria');
-/* RUTA PARA PODER LISTAR LAS CATEGORIAS QUE EXISTEN */
-Route::get('/Categorias', 'CategoriaController@ListarCategorias')->name('get_categorias');
-
-/*
- +----------------------------
- | PRODUCTOS
- -----------------------------
- */
-/* RUTA PARA REGISTAR PRODUCTOS */
-Route::post('/Nuevo_Producto', 'ProductoController@RegistrarProducto')->name('nuevo_producto');
-/* RUTA PARA PODER ELIMINAR UN PRODUCTO */
-Route::get('/Eliminar_Producto/{id}', 'ProductoController@EliminarProducto')->name('eliminar_categoria');
-/* RUTA PARA PODER LISTAR LOS PRODUCTOS */
-Route::get('/Productos', 'ProductoController@ListarProductos')->name('get_productos');
-/* RUTA PARA LISTAR EL CATALOGO DE LOS PRODUCTOS */
-Route::get('/Catalogo', 'ProductoController@getCatalogo');
-
-
+ 
 
 /*
  +----------------------------
